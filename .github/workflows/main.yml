@@ -2,7 +2,7 @@ name: helloGithubAction  # 워크플로우 이름
 
 on:
   schedule:
-    - cron: * /5 * * * *  # 10분마다 실행(최소5분)
+    - cron: */5 * * * *  # 10분마다 실행(최소5분)
 
 
 jobs:          # job 시작 
