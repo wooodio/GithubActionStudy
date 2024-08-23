@@ -1,6 +1,9 @@
 name: helloGithubAction  # 워크플로우 이름
 
-on: [push]               # 'push' 이벤트 발생 시 실행
+on:
+  schedule:
+    - cron: * /5 * * * *  # 10분마다 실행(최소5분)
+
 
 jobs:          # job 시작 
   build:  
